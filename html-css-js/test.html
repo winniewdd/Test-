@@ -38,11 +38,38 @@
     <audio src="2.mp4" controls autoplay loop></audio>
     <!-- 视频 autoplay自动播放，加muted静音播放-->
     <video src="1.mp4" controls autoplay muted loop></video>
-    <!-- 列表 -->
+    <!-- 无序列表 ul只能嵌套li-->
     <ul>
-        <ol>列表头</ol>
-        <li>a1</li>
+        <li>a1
+            <a href="#">hh</a>
+        </li>
         <li>b1</li>
     </ul>
+    <!-- 有序列表 ol只能嵌套li-->
+    <ol>
+        <li>张三</li>
+        <li>李四</li>
+    </ol>
+    <!-- 自定义列表 dl只能嵌套dt（主题）/dd-->
+    <dl>
+        <dt>帮助中心</dt>
+        <dd>账户管理</dd>
+        <dd>购物指南</dd>
+    </dl>
+    <!-- 表格标签 table嵌套tr行,tr嵌套td列,表格加border边框属性-->
+    <table border="1" width="500" height="300">
+        <tr>
+            <td>0.1</td>
+        </tr>
+        <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+        <tr>
+            <td>2.1</td>
+            <td>2.2</td>
+            <td>2.3</td>
+        </tr>
+    </table>
 </body>
 </html>
