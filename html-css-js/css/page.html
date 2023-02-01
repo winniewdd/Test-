@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: blue;
+        }
+        .red{
+            color: brown;
+        }
+        .size{
+            font-size: 66px;
+        }
+        #blue{
+            color: aqua;
+        }
+        *{
+            background-color: antiquewhite;
+            margin: 0px;
+            padding: 0px;
+        }
+        /* font-size：字号，font-weight：粗细，font-style：倾斜（normal无/italic倾斜） */
+        .font{
+            /* font-size: 20px;
+            font-weight: 700;
+            font-style: italic; */
+            /* 简写 font：style weight size family*/
+            font: italic 700 60px 宋体;
+
+        }
+        /* 按照非衬线系列显示 */
+        .fontf{
+            font-family:'Times New Roman', Times, serif,sans-serif;
+        }
+        .text{
+            /* 可以用px：像素，一般用em：字 */
+            /* text-indent: 32px; */
+            text-indent: 2em;
+            text-decoration: underline;
+            /* underline:下划线 line-through：删除线 overline：上划线 none：去掉下划线 */
+        }
+        .align{
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+        .line{
+            /* 字号的1.5倍 */
+            line-height: 50px;
+            line-height: 1.5;
+        }
+        .need{
+            /* 简写 font：style weight size/行高 family*/
+            font: italic 700 66px/2 宋体;
+        }
+    </style>
+</head>
+<body>
+    <!-- 选择器 -->
+    <p>标签选择器</p>
+    <p class="red size">类选择器</p>
+    <div class="red">使用类选择器</div>
+    <div id="blue">id选择器。一个id名字页面只能用一次</div>
+    <!-- 选择器通配符 -->
+    <div>通配符，全局：*{}</div>
+    <!-- 文本属性 -->
+    <p class="font">字号：font-size，默认字号16</p>
+    <p>加粗：font-weight</p>
+    <p>倾斜：font-style</p>
+    <em>倾斜</em>
+    <div class="fontf">字体：font-family</div>
+    <div>文本缩进</div>
+    <p class="text">hhhhhhh</p>
+    <div class="align">水平对齐
+    <img src="../images/w.jpg" style="height: 50px;">
+    </div>
+    <!-- 行高 -->
+    <p class="line">aaa</p>
+    <p class="line">aaa</p>
+    <div></div>
+</body>
+</html>

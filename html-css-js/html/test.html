@@ -56,7 +56,7 @@
         <dd>账户管理</dd>
         <dd>购物指南</dd>
     </dl>
-    <!-- 表格标签 table嵌套tr行,tr嵌套td列,表格加border边框属性-->
+    <!-- 表格标签 table嵌套tr行,tr嵌套td列,表格加border边框属性,colspan/rowspan-->
     <table border="1" width="500" height="300">
         <tr>
             <td>0.1</td>
@@ -67,9 +67,49 @@
         </tr>
         <tr>
             <td>2.1</td>
-            <td>2.2</td>
-            <td>2.3</td>
+            <td colspan="2">2.2</td>
         </tr>
     </table>
+    <!-- form表单 action为上传位置-->
+    <form action="">
+    <!-- 表单 input，类型type：text文本框，password密码框，radio单选框（name相同为一组，checked为默认选择），checkbox多选框，file上传文件，多个文件multiple,submit提交，reset重置，button普通按钮-->
+    <input type="text">
+    <input type="password">
+    <input type="radio" name="radio">男
+    <input type="radio" name="radio" checked>女
+    <input type="checkbox">
+    <input type="file" multiple>
+    <input type="submit">
+    <input type="reset">
+    <!-- 按钮input -->
+    <input type="submit">
+    <input type="reset">
+    <input type="button">
+    <!-- 按钮 button-->
+    <button type="submit">提交</button>
+    <button type="reset">重置</button>
+    </form>
+    <!-- 下拉菜单 select下拉菜单，option选项,selected默认选中-->
+    <select>
+        <option>北京</option>
+        <option selected>上海</option>
+        <option>深圳</option>
+    </select>
+    <!-- 文本域 自定义输入框-->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <!-- lable -->
+    <input type="radio" name="gender" id="man"><label for="man">man</label>
+    <input type="radio" name="gender" id="woman"><label for="woman">woman</label>
+    <label>
+        <input type="radio" name="gender">sex
+    </label>
+    <!-- 无语义标签div块标签/span行标签-->
+    <div>aaa</div>
+    <div>bbb</div>
+    <span>ccc</span>
+    <span>ddd</span>
+    <!-- 字符实体 空格&nbsp; ，-->
+    学&nbsp;&nbsp;习
+
 </body>
 </html>
